@@ -1,0 +1,11 @@
+:root {
+    --pink: #E0485D;
+    --cobalt: #4E4696;
+    --aureolin: #FCEC00;
+    --green: #4CAA2B;
+    --sage: #AECF80;
+}
+
+header {
+    height: 300px;
+}
