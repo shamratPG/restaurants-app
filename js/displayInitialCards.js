@@ -1,7 +1,7 @@
 function displayInitialCards(data) {
     const cardsContainer = document.getElementById('cards-container');
     data.forEach(element => {
-        console.log(element)
+        // console.log(element)
         const card = document.createElement('div');
         card.classList.add('col')
         card.innerHTML = `
@@ -18,4 +18,5 @@ function displayInitialCards(data) {
         `;
         cardsContainer.appendChild(card);
     });
+    showSpinner(false)
 }

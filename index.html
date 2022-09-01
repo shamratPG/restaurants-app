@@ -14,17 +14,26 @@
 </head>
 
 <body>
-    <header class=".container-fluid d-flex flex-column justify-content-center align-items-center bg-primary">
-        <h1>Welcome to our Restaurants!!</h1>
-        <input type="text" id="search" placeholder="Search for foods">
-        <button id="search-btn" class="btn btn-success">Search</button>
+    <header class=".container-fluid d-flex flex-column justify-content-center align-items-center bg-success">
+        <h1 class="mb-5 text-warning">Welcome to our Restaurants!!</h1>
+        <input class="form-control w-25 mb-3" type="text" id="search" placeholder="Search for foods">
+        <button id="search-btn" class="btn btn-warning text-success fs-5">Search</button>
 
     </header>
-    <main class=".container-fluid">
+    <main class="container-fluid pb-5">
         <div class="container m-auto row row-cols-1 row-cols-md-3 g-4" id="cards-container">
 
         </div>
+        <div id="spinner" class="d-flex justify-content-center align-items-center d-none">
+            <div class="spinner-border text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
     </main>
+
+    <footer class=".container-fluid d-flex justify-content-center align-items-center bg-success">
+        <p>created by <a href="#">Md. Shamrat Hossain</a></p>
+    </footer>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
@@ -32,6 +41,7 @@
         crossorigin="anonymous"></script>
 
     <!-- scripts -->
+    <script src="js/spinner.js"></script>
     <script src="js/loadInitialData.js"></script>
     <script src="js/displayInitialCards.js"></script>
 </body>
