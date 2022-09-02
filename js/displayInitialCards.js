@@ -1,20 +1,18 @@
 function displayInitialCards(data) {
     const cardsContainer = document.getElementById('cards-container');
+    cardsContainer.innerHTML = ``;
     data.forEach(element => {
-        // console.log(element)
         const card = document.createElement('div');
         card.classList.add('col');
-        // card.classList.add('card-color');
-        // card.classList.add('card-color');
         card.innerHTML = `
-        <div class="card card-color">
+        <div class="card card-color shadow pink-text">
             <img src="${element.strMealThumb}" class="card-img-top" alt="...">
             <div class="card-body text-center">
-                <h5 class="card-title">${element.strMeal}</h5>
-                    <p>Food Catagory: <a class="text-primary text-decoration-none" href="#">${element.strCategory}</a></p>
-                    <p>Area: <a class="text-primary text-decoration-none" href="#">${element.strArea}</a>
+                <h5 class="card-title fs-3">${element.strMeal}</h5>
+                    <p class ="fs-5 mb-1">Food Catagory: <a class="blue-text text-decoration-none" href="#">${element.strCategory}</a></p>
+                    <p class ="fs-5">Area: <a class="blue-text text-decoration-none" href="#">${element.strArea}</a>
                     </p>
-                <button onclick="showDetails()" class="btn btn-primary">Details</button>
+                <button onclick="showDetails()" class="default-btn fw-semibold shadow ">Details</button>
             </div>
         </div>
         `;

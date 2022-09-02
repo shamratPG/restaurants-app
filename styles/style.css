@@ -3,20 +3,18 @@
     --cream: #F4F1BB;
     --sky-blue: #9BC1BC;
     --blue: #5CA4A9;
+    --hover-blue: #70bec5;
     --gray: #E6EBE0;
+    --hover-gray: #dbdfd5;
 }
 
 header {
     height: 400px;
     background: var(--pink);
-    /*
-    background: linear-gradient(90deg, var(--sage) 1%, var(--green) 24%, var(--green) 74%, var(--sage) 98%);
-    color: var(--aureolin); */
 }
 
 header h1 {
     font-size: 4rem;
-    color: var(--cream);
 }
 
 header input {
@@ -29,13 +27,27 @@ header input {
 
 }
 
-#search-btn {
+.default-btn {
     background-color: var(--blue);
     color: var(--cream);
     border: none;
     border-radius: 10px;
     padding: 8px 30px;
     font-size: 1.2rem;
+}
+
+.default-btn:hover {
+    background-color: var(--hover-blue);
+
+}
+
+.view-btn {
+    background-color: var(--gray);
+    color: var(--pink);
+}
+
+.view-btn:hover {
+    background-color: var(--hover-gray);
 }
 
 main {
@@ -54,8 +66,37 @@ main {
 
 footer {
     height: 200px;
+    background: var(--pink);
 }
 
 .pink-bg {
     background-color: var(--pink);
+}
+
+.cream-text {
+    color: var(--cream);
+}
+
+.grey-text {
+    color: var(--gray);
+}
+
+.grey-text:hover {
+    color: var(--hover-gray);
+}
+
+.blue-text {
+    color: var(--blue);
+}
+
+.pink-text {
+    color: var(--pink);
+}
+
+.blue-text:hover {
+    color: var(--hover-blue);
+}
+
+.spinner-color {
+    color: var(--gray)
 }

@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <header class=".container-fluid d-flex flex-column justify-content-center align-items-center">
-        <h1 class="mb-5">Welcome to our Restaurants!!</h1>
-        <input class="fs-5 mb-3 fw-semibold" type="text" id="search" placeholder="Search for foods">
-        <button id="search-btn" class="fw-semibold">Search</button>
+    <header class=".container-fluid d-flex flex-column justify-content-center align-items-center shadow-lg">
+        <h1 class="mb-5 cream-text">Welcome to our Restaurants!!</h1>
+        <input class="fs-5 mb-3 fw-semibold shadow" type="text" id="search" placeholder="Search for foods">
+        <button id="search-btn" class="shadow default-btn fw-semibold cream-text">Search</button>
 
     </header>
     <main class="container-fluid pb-5">
@@ -25,14 +25,18 @@
 
         </div>
         <div id="spinner" class="d-flex justify-content-center align-items-center d-none">
-            <div class="spinner-border text-warning" role="status">
+            <div class="spinner-border spinner-color" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
         </div>
+        <div id="view-btn" class="d-flex justify-content-center align-items-center mt-5 d-none">
+            <button onclick="viewMore()" class="shadow default-btn view-btn fw-semibold">View All</button>
+        </div>
     </main>
 
-    <footer class=".container-fluid d-flex justify-content-center align-items-center bg-success">
-        <p>created by <a href="#">Md. Shamrat Hossain</a></p>
+    <footer class=".container-fluid d-flex justify-content-center align-items-center">
+        <p class="fs-5 cream-text">Created by <a class="grey-text text-decoration-none" href="#">Md. Shamrat Hossain</a>
+        </p>
     </footer>
 
     <!-- bootstrap -->
@@ -42,8 +46,10 @@
 
     <!-- scripts -->
     <script src="js/spinner.js"></script>
+    <script src="js/showBtn.js"></script>
     <script src="js/loadInitialData.js"></script>
     <script src="js/displayInitialCards.js"></script>
+    <script src="js/viewAllBtn.js"></script>
 </body>
 
 </html>
