@@ -1,23 +1,28 @@
-function fetchData(showAll) {
-    fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=a')
+function fetchData(search, showAll) {
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`;
+
+    // const url = `https://www.themealdb.com/api/json/v1/1/categories.php?s=${search}`
+    fetch(url)
         .then(res => res.json())
         .then(json => loadInitialData(json.meals, showAll))
+    // .then(json => {
+    //     console.log(json.categories)
+    // })
 
     showSpinner(true);
 
 }
 
 function loadInitialData(data, showAll) {
-    console.log(data)
-    if (!showAll && data.length > 9) {
+    if (!showAll) {
         displayInitialCards(data.slice(0, 9));
         showBtn(true);
-        console.log('show all false')
     }
     else if (showAll) {
         displayInitialCards(data);
-        showBtn(false)
+        showBtn(false);
     }
+    console.log('load initial data')
 }
 
-fetchData(false);
+fetchData('a', false);

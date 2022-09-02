@@ -1,5 +1,5 @@
 function viewMore() {
     console.log('view More');
-    fetchData(true);
+    fetchData('a', true);
     showBtn(false);
 }
