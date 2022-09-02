@@ -3,9 +3,11 @@ function displayInitialCards(data) {
     data.forEach(element => {
         // console.log(element)
         const card = document.createElement('div');
-        card.classList.add('col')
+        card.classList.add('col');
+        // card.classList.add('card-color');
+        // card.classList.add('card-color');
         card.innerHTML = `
-        <div class="card">
+        <div class="card card-color">
             <img src="${element.strMealThumb}" class="card-img-top" alt="...">
             <div class="card-body text-center">
                 <h5 class="card-title">${element.strMeal}</h5>
