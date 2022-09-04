@@ -23,13 +23,13 @@ Top Features:
 
 ### Screenshot
 
-![](images/screenshot.png)
+![](Restaurants-App.png)
 
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Code URL](https://github.com/shamratPG/restaurants-app)
+- [Live Site URL](https://shamratpg.github.io/restaurants-app/)
 
 
 ### Built with
